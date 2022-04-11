@@ -286,3 +286,20 @@ body{
     margin-bottom: 0;
 }
 /* End portifolio */
+/* Start about */
+.about{
+    padding-top: var(--section-padding);
+    padding-bottom: calc(var(--section-padding) + 60px);
+}
+.about .about-content{
+    margin-top: 80px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.about .about-content .image {
+    position: relative;
+    height: 375px;
+    width: 250px;
+}
+/* End about */
