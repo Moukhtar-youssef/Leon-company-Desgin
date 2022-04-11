@@ -256,16 +256,33 @@ body{
     }
 }
 /* end services */
-/* Start portifolio */
-.portifolio{
+/* Start portfolio */
+.portfolio{
     padding-top: var(--section-padding);
     padding-bottom: var(--section-padding);
     background-color: var(--section-background);
 }
-.portifolio .portifolio-content{
+.portfolio .portfolio-content{
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
     grid-gap: 30px;
     margin-top: 80px;
+}
+.portfolio .card{
+    background-color: white;
+}
+.portfolio .card img{
+    max-width: 100%;
+}
+.portfolio .card .info{
+    padding: 20px;
+}
+.portfolio .card .info h3{
+    margin: 0;
+}
+.portfolio .card .info p{
+    color: #777;
+    line-height: 1.6;
+    margin-bottom: 0;
 }
 /* End portifolio */
