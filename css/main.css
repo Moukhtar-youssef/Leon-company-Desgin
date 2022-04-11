@@ -2,6 +2,8 @@
 :root{
     --main-color:#10cab7;
     --secondary-color:#2c4755;
+    --section-padding:60px;
+    --section-background:#f6f6f6;
 }
 /* end variables */
 /* Start global rules */
@@ -169,9 +171,9 @@ body{
 /* end landing */
 /* start features */
 .features {
-    padding-top: 60px;
-    padding-bottom: 60px;
-    background-color: #f6f6f6;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
 }
 .features .container{
     display: grid;
@@ -197,14 +199,14 @@ body{
 /* end feautres */
 /* start services */
 .services{
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
 }
 .services .services-content {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     grid-gap: 30px;
-    margin-top: 100px;
+    margin-top: 80px;
 }
 .services .services-content .srv{
     display: flex;
@@ -243,8 +245,27 @@ body{
     top: -50px;
     position: absolute;
     right: 0px;
+    z-index: -1;
 }
 .services .services-content .image img{
     width: 260px;
 }
+@media (max-width:1199px){
+    .image-column{
+        display: none;
+    }
+}
 /* end services */
+/* Start portifolio */
+.portifolio{
+    padding-top: var(--section-padding);
+    padding-bottom: var(--section-padding);
+    background-color: var(--section-background);
+}
+.portifolio .portifolio-content{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px , 1fr));
+    grid-gap: 30px;
+    margin-top: 80px;
+}
+/* End portifolio */
