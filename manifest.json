@@ -1,3 +1,8 @@
 {
+    "name" : "Leon-Company",
+    "short_name" : "Leon",
+    "start_url" : "/index.html",
+    "display" : "standalone",
+    "background_color" : "#fff",
     "theme_color": "#ffffff"
 }
