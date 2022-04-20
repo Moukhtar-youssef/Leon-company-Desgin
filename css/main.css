@@ -85,28 +85,50 @@ html{
     position: relative;
 }
 .header .links .icons {
+    margin: 20px auto;
+    position: relative;
     width: 30px;
+    height: 12px;
     display: flex;
     flex-wrap: wrap;
     justify-content: flex-end;
 }
 .header .links .icons span {
     background-color: #333;
-    margin-bottom:  5px ;
-    height: 3px;
+    height: 2px;
+    position: absolute;
+    width: 100%;
+    float: left;
+    transition: all 0.3s ease-in-out;
 }
 .header .links .icons span:first-child{
     width: 100%;
+    top: 0px;
 }
 .header .links .icons span:nth-child(2){
     width: 60%;
     transition: 0.3s;
+    top: 6px;
 }
 .header .links:hover .icons span:nth-child(2){
     width: 100%;
+    opacity: 0;
+    float: right;
 }
 .header .links .icons span:last-child{
     width: 100%;
+    top: 12px;
+}
+.header .links:hover .icons span:last-child,
+.header .links:hover .icons span:first-child{
+    top: 6px;
+    background-color: red;
+}
+.header .links:hover .icons span:last-child{
+    transform: rotate(45deg);
+}
+.header .links:hover .icons span:first-child{
+    transform: rotate(-45deg);
 }
 .header .links ul{
     list-style: none;
