@@ -9,27 +9,27 @@
     <meta name="theme-color" content="#ffffff" />
     <link rel="manifest" href="./manifest.json" />
     <meta name="keywords" content="HTML, CSS, JavaScript" />
-    <title>Leon company</title>
     <link rel="stylesheet" href="css/main.css" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/all.min.css"/>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;300;400;500;600;700;800;900&display=swap"
-        rel="stylesheet"/>
+    rel="stylesheet"/>
+    <title>Leon company</title>
 </head>
 <body>
     <!-- start header -->
     <div class="header">
         <div class="container">
             <img src="./img/logo.png" href="#" alt="" class="logo">
-            <div class="links">
+            <div onclick="open_menu()" class="links">
                 <span class="icons">
                     <span></span>
                     <span></span>
                     <span></span>
                 </span>
-                <ul>
+                <ul id="ul">
                     <li><a href="#services">Services</a></li>
                     <li><a href="#portfolio">Portfolio</a></li>
                     <li><a href="#about">About</a></li>
@@ -216,5 +216,6 @@
         &copy; 2021 <span>Leon</span> All Rights Reserved
     </div>
     <!-- End footer -->
+    <script src="./js/main.js"></script>
 </body>
 </html>

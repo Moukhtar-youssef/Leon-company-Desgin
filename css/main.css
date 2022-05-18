@@ -110,7 +110,7 @@ html{
     transition: 0.3s;
     top: 6px;
 }
-.header .links:hover .icons span:nth-child(2){
+.header .links .closed span:nth-child(2){
     width: 100%;
     opacity: 0;
     float: right;
@@ -119,15 +119,15 @@ html{
     width: 100%;
     top: 12px;
 }
-.header .links:hover .icons span:last-child,
-.header .links:hover .icons span:first-child{
+.header .links .closed span:last-child,
+.header .links .closed span:first-child{
     top: 6px;
     background-color: red;
 }
-.header .links:hover .icons span:last-child{
+.header .links .closed span:last-child{
     transform: rotate(45deg);
 }
-.header .links:hover .icons span:first-child{
+.header .links .closed span:first-child{
     transform: rotate(-45deg);
 }
 .header .links ul{
@@ -150,9 +150,6 @@ html{
     position: absolute;
     right: 5px;
     top: -20px;
-}
-.header .links:hover ul{
-    display: block;
 }
 .header .links ul li a{
     display: block;

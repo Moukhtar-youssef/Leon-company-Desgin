@@ -1,7 +1,7 @@
 {
     "name" : "Leon-Company",
     "short_name" : "Leon",
-    "start_url" : "/index.html",
+    "start_url" : "https://moukhtar-youssef.github.io/Leon-company-Desgin/",
     "display" : "standalone",
     "background_color" : "#fff",
     "theme_color": "#ffffff"
